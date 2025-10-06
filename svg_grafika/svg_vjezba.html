@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG grafika</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h2>SVG grafika u HTMLu</h2>
@@ -12,5 +17,35 @@
         <circle cx="300" cy="300" r="100" fill="purple" />
         <polygon points="300,10 350,190 250,190" style="fill:lime;stroke:purple;stroke-width:3" />
     </svg>
+
+    <hr>
+    <h2>Tablica u html</h2>
+    <table>
+        <tr>
+            <th>Firma</th>
+            <th>Contact</th>
+            <th>Zemlja</th>
+        </tr>
+        <tr>
+            <td>Đuro Đaković</td>
+            <td>Osoba 1</td>
+            <td>Hrvatska</td>
+        </tr>
+        <tr>
+            <td>Stolarija Lujić</td>
+            <td>Drago</td>
+            <td>Gundinci</td>
+        </tr>
+    </table>
+    <br>
+
+    <h2>Forms u HTML</h2>
+    <form action="#" method="get">
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" required><br>
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime"><br>
+        <input type="submit" value="Pošalji">
+    </form>
 </body>
 </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brod</title>
+</head>
+<body>
+    <h2>Canvas</h2>
+    <canvas id="myCanvas" width="800" height="500" style="border: 2px solid black;"></canvas>
+    <script>
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        /* Tijelo */
+        ctx.beginPath();
+        ctx.rect(60, 300, 700, 100);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(160, 400, 550, 80);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(10, 300);
+        ctx.lineTo(60, 300);
+        ctx.lineTo(60, 400);
+        ctx.lineTo(10, 300);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.lineTo(60, 400);
+        ctx.lineTo(160, 400);
+        ctx.lineTo(160, 480);
+        ctx.lineTo(60, 400);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(760, 345);
+        ctx.lineTo(760, 400);
+        ctx.lineTo(750, 400);
+        ctx.lineTo(760, 345);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.lineTo(750, 400);
+        ctx.lineTo(710, 400);
+        ctx.lineTo(710, 480);
+        ctx.lineTo(750, 400);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        /* Prozori */
+        ctx.beginPath();
+        ctx.rect(160, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(210, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(260, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(310, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(360, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(410, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(460, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(510, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(560, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(610, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(660, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(710, 330, 20, 15);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        /* Romb */
+        ctx.beginPath();
+        ctx.lineTo(300, 200);
+        ctx.lineTo(350, 200);
+        ctx.lineTo(350, 250);
+        ctx,lineTo(300, 250);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+    </script>
+</body>
+</html>
