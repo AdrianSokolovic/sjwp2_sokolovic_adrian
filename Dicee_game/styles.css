@@ -39,3 +39,19 @@ footer {
   font-family: 'Indie Flower', cursive;
 
 }
+
+h2{
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ECCA3;
+}
+
+button{
+  margin-left: 47%;
+  width: auto;
+  height: auto;
+  background-color: aliceblue;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3rem;
+}
