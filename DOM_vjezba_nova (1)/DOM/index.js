@@ -1,0 +1,20 @@
+//document.querySelectorAll("li")[1].style.backgroundColor = "blue"
+//document.querySelector("input").setAttribute("checked", "true");
+//document.querySelector("ol").querySelector("li").innerHTML = "Novi tekst";
+//document.getElementsByClassName("list")[0].style.fontsize = "24px";
+//document.querySelectorAll("a")[0].style.color = "green";
+//document.querySelectorAll(".btn")[0].textContent = "Kliknuto!";
+//document.querySelector(".list2").innerHTML = "";
+//document.getElementsByTagName("h2")[0].style.backgroundColor = "yellow";
+//document.querySelectorAll(".list2")[2].innerHTML = "Novi tekst";
+//document.getElementsByClassName("list2")[1].classList.remove("list2");
+//document.querySelectorAll("a")[0].setAttribute("title", "Web stranica");
+//document.querySelectorAll("a")[1].getAttribute("href");
+//document.querySelectorAll("a")[1].setAttribute("href", "https://yahoo.com");
+//document.querySelectorAll("li")[1].classList.remove("list");
+//document.querySelector("ul").querySelectorAll("li")[0].innerHTML = "Promijenjeno";
+//document.querySelector("a").setAttribute("href", "https://bing.com");
+//document.getElementsByClassName("btn")[0].classList.add("active");
+//document.querySelector("input").getAttribute("checked");
+//document.getElementById("second").style.color = "blue";
+//document.getElementById("title").innerHTML = "Pozdrav";
