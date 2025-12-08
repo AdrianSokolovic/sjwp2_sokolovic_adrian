@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini kalkulator</title>
+</head>
+<body>
+    <h1>Mini kalkulator</h1>
+    <hr>
+    <form onsubmit="Izracunaj(event)">
+        <label for="prBr">Prvi broj: </label>
+        <input type="number" id="prBr"><br><br>
+        <label for="drBr">Drugi broj: </label>
+        <input type="number" id="drBr"><br><br>
+
+        <button type="submit" id="zbroji" onclick="Plus()">+</button>
+        <button type="submit" id="oduzmi" onclick="Minus()">-</button>
+        <button type="submit" id="podijeli" onclick="Podijeljeno()">/</button>
+        <button type="submit" id="pomnozi" onclick="Puta()">*</button>
+    </form>
+    
+    <div id="rez"></div>
+    <script src="./java.js"></script>
+</body>
+</html>
