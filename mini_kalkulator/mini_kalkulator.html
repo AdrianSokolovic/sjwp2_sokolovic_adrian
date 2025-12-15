@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini kalkulator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Mini kalkulator</h1>
@@ -14,10 +15,11 @@
         <label for="drBr">Drugi broj: </label>
         <input type="number" id="drBr"><br><br>
 
-        <button type="submit" id="zbroji" onclick="Plus()">+</button>
-        <button type="submit" id="oduzmi" onclick="Minus()">-</button>
-        <button type="submit" id="podijeli" onclick="Podijeljeno()">/</button>
-        <button type="submit" id="pomnozi" onclick="Puta()">*</button>
+        <button type="button" id="zbroji" onclick="Plus()">+</button>
+        <button type="button" id="oduzmi" onclick="Minus()">-</button>
+        <button type="button" id="podijeli" onclick="Podijeljeno()">/</button>
+        <button type="button" id="pomnozi" onclick="Puta()">*</button>
+        <button type="reset" id="ac" onclick="Brisanje()">AC</button>   <!-- All Clear -->
     </form>
     
     <div id="rez"></div>
