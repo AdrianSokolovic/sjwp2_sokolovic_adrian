@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektronicki alati</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Elektronički alati</h1>
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Ohmov zakon</legend>
+            <label for="otporOHM">Unesi otpor: </label>
+            <input type="number" id="otporOHM"><label>Ohm</label> <br>
+
+            <label for="naponOHM">Unesi napon: </label>
+            <input type="number" id="naponOHM"><label>V</label> <br>
+
+            <button type="button">Izračunaj struju</button>
+            <p>Struja</p>
+            <div id="struja_ohmZ" class="rez"></div>
+
+            <!-- <img src="./slike/OhmovZakon.webp" alt="Ohmov zakon shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Djelilo napona</legend>
+            <label for="DNotpor1">Unesi R1: </label>
+            <input type="number" id="DNotpor1"><label>Ohm</label> <br>
+
+            <label for="DNotpor2">Unesi R2: </label>
+            <input type="number" id="DNotpor2"><label>Ohm</label> <br>
+
+            <label for="DNul_napon">Unesi Uul: </label>
+            <input type="number" id="DNul_napon"><label>V</label> <br>
+
+            <button type="button">Izračunaj Uiz</button>
+            <p>Uiz</p>
+            <div id="DN_Uiz" class="rez"></div>
+
+           <!--  <img src="./slike/VoltageDivider.png" alt="Djelilo napona shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Serijsko spajanje otpornika</legend>
+            <label for="SSOotpor1">Unesi R1: </label>
+            <input type="number" id="SSOotpor1"><label>Ohm</label> <br>
+
+            <label for="SSOotpor2">Unesi R2: </label>
+            <input type="number" id="SSOotpor2"><label>Ohm</label> <br>
+
+            <label for="SSOotpor3">Unesi R3: </label>
+            <input type="number" id="SSOotpor3"><label>Ohm</label> <br>
+
+            <button type="button">Izračunaj Ruk</button>
+            <p>Ruk</p>
+            <div id="SSO_Ruk" class="rez"></div>
+
+           <!--  <img src="" alt="Serijsko spajanje otpornika shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Paralelno spajanje otpornika</legend>
+            <label for="PSOotpor1">Unesi R1: </label>
+            <input type="number" id="PSOotpor1"><label>Ohm</label> <br>
+
+            <label for="PSOotpor2">Unesi R2: </label>
+            <input type="number" id="PSOotpor2"><label>Ohm</label> <br>
+
+            <label for="PSOotpor3">Unesi R3: </label>
+            <input type="number" id="PSOotpor3"><label>Ohm</label> <br>
+
+            <button type="button">Izračunaj Ruk</button>
+            <p>Ruk</p>
+            <div id="SSO_Ruk" class="rez"></div>
+
+           <!--  <img src="" alt="Paralelno spajanje otpornika shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Serijsko spajanje kondenzatora</legend>
+            <label for="SSKkapacitet1">Unesi C1: </label>
+            <input type="number" id="SSKkapacitet1"><label>F</label> <br>
+
+            <label for="SSKkapacitet2">Unesi C2: </label>
+            <input type="number" id="SSKkapacitet2"><label>F</label> <br>
+
+            <label for="SSKkapacitet3">Unesi C3: </label>
+            <input type="number" id="SSKkapacitet3"><label>F</label> <br>
+
+            <button type="button">Izračunaj Cuk</button>
+            <p>Cuk</p>
+            <div id="SSK_Cuk" class="rez"></div>
+
+           <!--  <img src="" alt="Serijsko spajanje kondenzatora shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Paralelno spajanje kondenzatora</legend>
+            <label for="PSKkapacitet1">Unesi C1: </label>
+            <input type="number" id="PSKkapacitet1"><label>F</label> <br>
+
+            <label for="PSKkapacitet2">Unesi C2: </label>
+            <input type="number" id="PSKkapacitet2"><label>F</label> <br>
+
+            <label for="PSKkapacitet3">Unesi C3: </label>
+            <input type="number" id="PSKkapacitet3"><label>F</label> <br>
+
+            <button type="button">Izračunaj Cuk</button>
+            <p>Cuk</p>
+            <div id="PSK_Cuk" class="rez"></div>
+
+           <!--  <img src="" alt="Paralelno spajanje kondenzatora shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Serijsko spajanje zavojnica</legend>
+            <label for="SSZinduktivitet1">Unesi L1: </label>
+            <input type="number" id="SSZinduktivitet1"><label>H</label> <br>
+
+            <label for="SSZinduktivitet2">Unesi L2: </label>
+            <input type="number" id="SSZinduktivitet2"><label>H</label> <br>
+
+            <label for="SSZinduktivitet3">Unesi L3: </label>
+            <input type="number" id="SSZinduktivitet3"><label>H</label> <br>
+
+            <button type="button">Izračunaj Luk</button>
+            <p>Luk</p>
+            <div id="SSZ_Luk" class="rez"></div>
+
+           <!--  <img src="" alt="Serijsko spajanje zavojnioca shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Paralelno spajanje zavojnioca</legend>
+            <label for="PSZinduktivitet1">Unesi L1: </label>
+            <input type="number" id="PSZinduktivitet1"><label>H</label> <br>
+
+            <label for="PSZinduktivitet2">Unesi L2: </label>
+            <input type="number" id="PSZinduktivitet2"><label>H</label> <br>
+
+            <label for="PSZinduktivitet3">Unesi L3: </label>
+            <input type="number" id="PSZinduktivitet3"><label>H</label> <br>
+
+            <button type="button">Izračunaj Luk</button>
+            <p>Luk</p>
+            <div id="PSZ_Luk" class="rez"></div>
+
+           <!--  <img src="" alt="Paralelno spajanje zavojnioca shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Računanje induktiviteta zračnog svitka</legend>
+            <label for="brZavoja">Unesi broj zavoja: </label>
+            <input type="number" id="brZavoja"> <br>
+
+            <label for="povrsinaPresjeka">Unesi površinu presjeka: </label>
+            <input type="number" id="povrsinaPresjeka"><label>m2</label> <br>
+
+            <label for="duljinaZavojnice">Unesi duljinu zavojnice: </label>
+            <input type="number" id="duljinaZavojnice"><label>m</label> <br>
+
+            <button type="button">Izračunaj L</button>
+            <p>L</p>
+            <div id="RIZS_L" class="rez"></div>
+<!-- H je mozda prevelika mjerna jedinica -->
+           <!--  <img src="" alt="shema"> -->
+        </fieldset>
+    </form>
+
+    <script src="./java.js"></script>
+</body>
+</html>
