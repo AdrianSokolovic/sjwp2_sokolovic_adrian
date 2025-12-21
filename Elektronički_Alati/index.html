@@ -13,210 +13,235 @@
     <form>
         <fieldset>
             <legend>Ohmov zakon</legend>
-            <label for="otporOHM">Unesi otpor: </label>
-            <input type="number" id="otporOHM"><label>Ohm</label> <br>
+            <div class="form-content">
+                <label for="otporOHM">Unesi otpor: </label>
+                <input type="number" id="otporOHM"><label>Ω</label> <br>
 
-            <label for="naponOHM">Unesi napon: </label>
-            <input type="number" id="naponOHM"><label>V</label> <br>
+                <label for="naponOHM">Unesi napon: </label>
+                <input type="number" id="naponOHM"><label>V</label> <br>
 
-            <button type="button">Izračunaj struju</button>
-            <p>Struja</p>
-            <div id="struja_ohmZ" class="rez"></div>
-
-            <!-- <img src="./slike/OhmovZakon.webp" alt="Ohmov zakon shema"> -->
+                <button type="button" onclick="OhmovZakon()">Izračunaj struju</button>
+                <button type="reset" class="ClearAll" onclick="Clear('struja_ohmZ')">CA</button> <!-- Clear All -->
+                <p>Struja:</p>
+                <div id="struja_ohmZ" class="rez"></div>
+            </div>
+            <img src="./slike/OhmovZakon.webp" alt="Ohmov zakon shema">
         </fieldset>
     </form>
 
     <form>
         <fieldset>
             <legend>Djelilo napona</legend>
-            <label for="DNotpor1">Unesi R1: </label>
-            <input type="number" id="DNotpor1"><label>Ohm</label> <br>
+            <div class="form-content">
+                <label for="DNotpor1">Unesi R1: </label>
+                <input type="number" id="DNotpor1"><label>Ω</label> <br>
 
-            <label for="DNotpor2">Unesi R2: </label>
-            <input type="number" id="DNotpor2"><label>Ohm</label> <br>
+                <label for="DNotpor2">Unesi R2: </label>
+                <input type="number" id="DNotpor2"><label>Ω</label> <br>
 
-            <label for="DNul_napon">Unesi Uul: </label>
-            <input type="number" id="DNul_napon"><label>V</label> <br>
+                <label for="DNul_napon">Unesi Uul: </label>
+                <input type="number" id="DNul_napon"><label>V</label> <br>
 
-            <button type="button">Izračunaj Uiz</button>
-            <p>Uiz</p>
-            <div id="DN_Uiz" class="rez"></div>
-
-           <!--  <img src="./slike/VoltageDivider.png" alt="Djelilo napona shema"> -->
-        </fieldset>
+                <button type="button" onclick="DjeliloNapona()">Izračunaj Uiz</button>
+                <button type="reset" class="ClearAll" onclick="Clear('DN_Uiz')">CA</button>
+                <p>Uiz:</p>
+                <div id="DN_Uiz" class="rez"></div>
+            </div>
+            <img src="./slike/VoltageDivider.png" alt="Djelilo napona shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Serijsko spajanje otpornika</legend>
-            <label for="SSOotpor1">Unesi R1: </label>
-            <input type="number" id="SSOotpor1"><label>Ohm</label> <br>
+            <div class="form-content">
+                <label for="SSOotpor1">Unesi R1: </label>
+                <input type="number" id="SSOotpor1"><label>Ω</label> <br>
 
-            <label for="SSOotpor2">Unesi R2: </label>
-            <input type="number" id="SSOotpor2"><label>Ohm</label> <br>
+                <label for="SSOotpor2">Unesi R2: </label>
+                <input type="number" id="SSOotpor2"><label>Ω</label> <br>
 
-            <label for="SSOotpor3">Unesi R3: </label>
-            <input type="number" id="SSOotpor3"><label>Ohm</label> <br>
+                <label for="SSOotpor3">Unesi R3: </label>
+                <input type="number" id="SSOotpor3"><label>Ω</label> <br>
 
-            <button type="button">Izračunaj Ruk</button>
-            <p>Ruk</p>
-            <div id="SSO_Ruk" class="rez"></div>
-
-           <!--  <img src="" alt="Serijsko spajanje otpornika shema"> -->
+                <button type="button" onclick="SerijskoSpajanjeOtpornika()">Izračunaj Ruk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('SSO_Ruk')">CA</button>
+                <p>Ruk:</p>
+                <div id="SSO_Ruk" class="rez"></div>
+            </div>
+            <img src="./slike/SerijskiOtpornici.png" alt="Serijsko spajanje otpornika shema">
         </fieldset>
     </form>
 
     <form>
         <fieldset>
             <legend>Paralelno spajanje otpornika</legend>
-            <label for="PSOotpor1">Unesi R1: </label>
-            <input type="number" id="PSOotpor1"><label>Ohm</label> <br>
+            <div class="form-content">
+                <label for="PSOotpor1">Unesi R1: </label>
+                <input type="number" id="PSOotpor1"><label>Ω</label> <br>
 
-            <label for="PSOotpor2">Unesi R2: </label>
-            <input type="number" id="PSOotpor2"><label>Ohm</label> <br>
+                <label for="PSOotpor2">Unesi R2: </label>
+                <input type="number" id="PSOotpor2"><label>Ω</label> <br>
 
-            <label for="PSOotpor3">Unesi R3: </label>
-            <input type="number" id="PSOotpor3"><label>Ohm</label> <br>
+                <label for="PSOotpor3">Unesi R3: </label>
+                <input type="number" id="PSOotpor3"><label>Ω</label> <br>
 
-            <button type="button">Izračunaj Ruk</button>
-            <p>Ruk</p>
-            <div id="SSO_Ruk" class="rez"></div>
-
-           <!--  <img src="" alt="Paralelno spajanje otpornika shema"> -->
-        </fieldset>
+                <button type="button" onclick="ParalelnoSpajanjeOtpornika()">Izračunaj Ruk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('PSO_Ruk')">CA</button>
+                <p>Ruk:</p>
+                <div id="PSO_Ruk" class="rez"></div>
+            </div>
+            <img src="./slike/ParalelniOtpornici.png" alt="Paralelno spajanje otpornika shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Serijsko spajanje kondenzatora</legend>
-            <label for="SSKkapacitet1">Unesi C1: </label>
-            <input type="number" id="SSKkapacitet1"><label>F</label> <br>
+            <div class="form-content">
+                <label for="SSKkapacitet1">Unesi C1: </label>
+                <input type="number" id="SSKkapacitet1"><label>F</label> <br>
 
-            <label for="SSKkapacitet2">Unesi C2: </label>
-            <input type="number" id="SSKkapacitet2"><label>F</label> <br>
+                <label for="SSKkapacitet2">Unesi C2: </label>
+                <input type="number" id="SSKkapacitet2"><label>F</label> <br>
 
-            <label for="SSKkapacitet3">Unesi C3: </label>
-            <input type="number" id="SSKkapacitet3"><label>F</label> <br>
+                <label for="SSKkapacitet3">Unesi C3: </label>
+                <input type="number" id="SSKkapacitet3"><label>F</label> <br>
 
-            <button type="button">Izračunaj Cuk</button>
-            <p>Cuk</p>
-            <div id="SSK_Cuk" class="rez"></div>
-
-           <!--  <img src="" alt="Serijsko spajanje kondenzatora shema"> -->
-        </fieldset>
+                <button type="button" onclick="SerijskoSpajanjeKondenzatora()">Izračunaj Cuk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('SSK_Cuk')">CA</button>
+                <p>Cuk:</p>
+                <div id="SSK_Cuk" class="rez"></div>
+            </div>
+            <img src="./slike/serijskiKondenzator.png" alt="Serijsko spajanje kondenzatora shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Paralelno spajanje kondenzatora</legend>
-            <label for="PSKkapacitet1">Unesi C1: </label>
-            <input type="number" id="PSKkapacitet1"><label>F</label> <br>
+            <div class="form-content">
+                <label for="PSKkapacitet1">Unesi C1: </label>
+                <input type="number" id="PSKkapacitet1"><label>F</label> <br>
 
-            <label for="PSKkapacitet2">Unesi C2: </label>
-            <input type="number" id="PSKkapacitet2"><label>F</label> <br>
+                <label for="PSKkapacitet2">Unesi C2: </label>
+                <input type="number" id="PSKkapacitet2"><label>F</label> <br>
 
-            <label for="PSKkapacitet3">Unesi C3: </label>
-            <input type="number" id="PSKkapacitet3"><label>F</label> <br>
+                <label for="PSKkapacitet3">Unesi C3: </label>
+                <input type="number" id="PSKkapacitet3"><label>F</label> <br>
 
-            <button type="button">Izračunaj Cuk</button>
-            <p>Cuk</p>
-            <div id="PSK_Cuk" class="rez"></div>
-
-           <!--  <img src="" alt="Paralelno spajanje kondenzatora shema"> -->
-        </fieldset>
+                <button type="button" onclick="ParalelnoSpajanjeKondenzatora()">Izračunaj Cuk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('PSK_Cuk')">CA</button>
+                <p>Cuk:</p>
+                <div id="PSK_Cuk" class="rez"></div>
+            </div>
+            <img src="./slike/paralelniKondenzatori.jpg" alt="Paralelno spajanje kondenzatora shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Serijsko spajanje zavojnica</legend>
-            <label for="SSZinduktivitet1">Unesi L1: </label>
-            <input type="number" id="SSZinduktivitet1"><label>H</label> <br>
+            <div class="form-content">
+                <label for="SSZinduktivitet1">Unesi L1: </label>
+                <input type="number" id="SSZinduktivitet1"><label>H</label> <br>
 
-            <label for="SSZinduktivitet2">Unesi L2: </label>
-            <input type="number" id="SSZinduktivitet2"><label>H</label> <br>
+                <label for="SSZinduktivitet2">Unesi L2: </label>
+                <input type="number" id="SSZinduktivitet2"><label>H</label> <br>
 
-            <label for="SSZinduktivitet3">Unesi L3: </label>
-            <input type="number" id="SSZinduktivitet3"><label>H</label> <br>
+                <label for="SSZinduktivitet3">Unesi L3: </label>
+                <input type="number" id="SSZinduktivitet3"><label>H</label> <br>
 
-            <button type="button">Izračunaj Luk</button>
-            <p>Luk</p>
-            <div id="SSZ_Luk" class="rez"></div>
-
-           <!--  <img src="" alt="Serijsko spajanje zavojnioca shema"> -->
+                <button type="button" onclick="SerijskoSpajanjeZavojnica()">Izračunaj Luk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('SSZ_Luk')">CA</button>
+                <p>Luk:</p>
+                <div id="SSZ_Luk" class="rez"></div>
+            </div>
+            <img src="./slike/serijskeZavojnice.jpg" alt="Serijsko spajanje zavojnioca shema">
         </fieldset>
     </form>
 
     <form>
         <fieldset>
             <legend>Paralelno spajanje zavojnioca</legend>
-            <label for="PSZinduktivitet1">Unesi L1: </label>
-            <input type="number" id="PSZinduktivitet1"><label>H</label> <br>
+            <div class="form-content">
+                <label for="PSZinduktivitet1">Unesi L1: </label>
+                <input type="number" id="PSZinduktivitet1"><label>H</label> <br>
 
-            <label for="PSZinduktivitet2">Unesi L2: </label>
-            <input type="number" id="PSZinduktivitet2"><label>H</label> <br>
+                <label for="PSZinduktivitet2">Unesi L2: </label>
+                <input type="number" id="PSZinduktivitet2"><label>H</label> <br>
 
-            <label for="PSZinduktivitet3">Unesi L3: </label>
-            <input type="number" id="PSZinduktivitet3"><label>H</label> <br>
+                <label for="PSZinduktivitet3">Unesi L3: </label>
+                <input type="number" id="PSZinduktivitet3"><label>H</label> <br>
 
-            <button type="button">Izračunaj Luk</button>
-            <p>Luk</p>
-            <div id="PSZ_Luk" class="rez"></div>
-
-           <!--  <img src="" alt="Paralelno spajanje zavojnioca shema"> -->
+                <button type="button" onclick="ParalelnoSpajanjeZavojnica()">Izračunaj Luk</button>
+                <button type="reset" class="ClearAll" onclick="Clear('PSZ_Luk')">CA</button>
+                <p>Luk:</p>
+                <div id="PSZ_Luk" class="rez"></div>
+            </div>
+            <img src="./slike/paralelneZavojnice.jpg" alt="Paralelno spajanje zavojnioca shema">
         </fieldset>
     </form>
 
     <form>
         <fieldset>
             <legend>Računanje induktiviteta zračnog svitka</legend>
-            <label for="brZavoja">Unesi broj zavoja: </label>
-            <input type="number" id="brZavoja"> <br>
+            <div class="form-content">
+                <label for="brZavoja">Unesi broj zavoja: </label>
+                <input type="number" id="brZavoja"> <br>
 
-            <label for="povrsinaPresjeka">Unesi površinu presjeka: </label>
-            <input type="number" id="povrsinaPresjeka"><label>m2</label> <br>
+                <label for="povrsinaPresjeka">Unesi površinu presjeka: </label>
+                <input type="number" id="povrsinaPresjeka"><label>m2</label> <br>
 
-            <label for="duljinaZavojnice">Unesi duljinu zavojnice: </label>
-            <input type="number" id="duljinaZavojnice"><label>m</label> <br>
+                <label for="duljinaZavojnice">Unesi duljinu zavojnice: </label>
+                <input type="number" id="duljinaZavojnice"><label>m</label> <br>
 
-            <button type="button">Izračunaj L</button>
-            <p>L</p>
-            <div id="RIZS_L" class="rez"></div>
+                <button type="button" onclick="RačunanjeInduktivitetaZračnogSvitka()">Izračunaj L</button>
+                <button type="reset" class="ClearAll" onclick="Clear('RIZS_L')">CA</button>
+                <p>L:</p>
+                <div id="RIZS_L" class="rez"></div>
 <!-- H je mozda prevelika mjerna jedinica -->
-           <!--  <img src="" alt="shema"> -->
-        </fieldset>
+            </div>
+            <img src="./slike/zracniSvitak.jpg" alt="induktivitet zračnog svitka shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Računanje induktivnog otpora</legend>
-            <label for="RIOw">Unesi w: </label>
-            <input type="number" id="RIOw"><label>Hz</label> <br>
+            <div class="form-content">
+                <label for="RIOw">Unesi w: </label>
+                <input type="number" id="RIOw"><label>Hz</label> <br>
 
-            <label for="RIO_L">Unesi L: </label>
-            <input type="number" id="RIO_L"><label>H</label> <br>
+                <label for="RIO_L">Unesi L: </label>
+                <input type="number" id="RIO_L"><label>H</label> <br>
 
-            <button type="button">Izračunaj Xl</button>
-            <p>Xl</p>
-            <div id="RIO_Xl" class="rez"></div>
-           <!--  <img src="" alt="shema"> -->
-        </fieldset>
+                <button type="button" onclick="RačunanjeInduktivnogOtpora()">Izračunaj Xl</button>
+                <button type="reset" class="ClearAll" onclick="Clear('RIO_Xl')">CA</button>
+                <p>Xl:</p>
+                <div id="RIO_Xl" class="rez"></div>
+            </div>
+            <img src="./slike/induktivniOtpor.png" alt="induktivni otpor shema">
+        </fieldset> 
     </form>
 
     <form>
         <fieldset>
             <legend>Računanje kapacitivnog otpora</legend>
-            <label for="RKOw">Unesi w: </label>
-            <input type="number" id="RKOw"><label>Hz</label> <br>
+            <div class="form-content">
+                <label for="RKOw">Unesi w: </label>
+                <input type="number" id="RKOw"><label>Hz</label> <br>
 
-            <label for="RKO_C">Unesi C: </label>
-            <input type="number" id="RKO_C"><label>F</label> <br>
+                <label for="RKO_C">Unesi C: </label>
+                <input type="number" id="RKO_C"><label>F</label> <br>
 
-            <button type="button">Izračunaj Xc</button>
-            <p>Xc</p>
-            <div id="RKO_Xc" class="rez"></div>
-           <!--  <img src="" alt="shema"> -->
-        </fieldset>
+                <button type="button" onclick="RačunanjeKapacitivnogOtpora()">Izračunaj Xc</button>
+                <button type="reset" class="ClearAll" onclick="Clear('RKO_Xc')">CA</button>
+                <p>Xc:</p>
+                <div id="RKO_Xc" class="rez"></div>
+            </div>
+            <img src="./slike/kapacitivniOtpor.png" alt="kapacitivni otpor shema">
+        </fieldset> 
     </form>
 
     <script src="./java.js"></script>

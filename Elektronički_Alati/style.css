@@ -1,12 +1,11 @@
 .rez{
     border: 2px solid black;
-    width: 15%;
+    width: 40%;
     height: 50px;
     margin: 20px;
     background-color: white;
     text-align: center;
     font-size: 24px;
-    font-weight: bold;
 }
 
 body {
@@ -19,7 +18,16 @@ h1 {
 
 form {
     padding: 20px;
-    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.form-content {
+    flex: 1;
 }
 
 label {
@@ -42,14 +50,24 @@ button {
     width: 100px;
     height: 50px;
     margin: 5px;
-    border: none;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
 }
 
-#ac {
-    background-color: rgb(209, 138, 7);
-    width: 60px;
+.ClearAll {
+    background-color: #242121;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+    margin-right: 25%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 25px;
 }
