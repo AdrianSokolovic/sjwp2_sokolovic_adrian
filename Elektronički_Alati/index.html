@@ -187,6 +187,38 @@
         </fieldset>
     </form>
 
+    <form>
+        <fieldset>
+            <legend>Računanje induktivnog otpora</legend>
+            <label for="RIOw">Unesi w: </label>
+            <input type="number" id="RIOw"><label>Hz</label> <br>
+
+            <label for="RIO_L">Unesi L: </label>
+            <input type="number" id="RIO_L"><label>H</label> <br>
+
+            <button type="button">Izračunaj Xl</button>
+            <p>Xl</p>
+            <div id="RIO_Xl" class="rez"></div>
+           <!--  <img src="" alt="shema"> -->
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Računanje kapacitivnog otpora</legend>
+            <label for="RKOw">Unesi w: </label>
+            <input type="number" id="RKOw"><label>Hz</label> <br>
+
+            <label for="RKO_C">Unesi C: </label>
+            <input type="number" id="RKO_C"><label>F</label> <br>
+
+            <button type="button">Izračunaj Xc</button>
+            <p>Xc</p>
+            <div id="RKO_Xc" class="rez"></div>
+           <!--  <img src="" alt="shema"> -->
+        </fieldset>
+    </form>
+
     <script src="./java.js"></script>
 </body>
 </html>
