@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad5</title>
+    <style>
+        div{
+            width: 50%;
+            height: 180px;
+            padding-left: 20px;
+            padding-top: 5px;
+            margin: 15px;
+        }
+        #a{
+            background-color: blue;
+        }
+        #b{
+            background-color: green;
+        }
+        #c{
+            background-color: red;
+        }
+        h5{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        input{
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .naslov{
+            font-size:xx-large;
+        }
+        .brojevi{
+            font-size: large;
+        }
+        .myButton {
+	        box-shadow: 0px 1px 0px 2px #9fb4f2;
+	        background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	        background-color:#7892c2;
+	        border-radius:21px;
+	        border:1px solid #4e6096;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#ffffff;
+	        font-family:Arial;
+	        font-size:21px;
+	        padding:12px 37px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #283966;
+        }
+        .myButton:hover {
+	        background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	        background-color:#476e9e;
+        }
+        .myButton:active {
+	        position:relative;
+	        top:1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weight Converter</h1>
+
+    <input type="number" id="unos">
+    <button id="izracunaj" class="myButton">GO</button>
+
+    <div id="a">
+        <p class="naslov">Pounds: <p>
+        <p id="pounds" class="brojevi"></p>
+    </div>
+    <div id="b">
+        <p class="naslov">Ounces: </p>
+        <p id="ounces" class="brojevi"></p>
+    </div>
+    <div id="c">
+        <p class="naslov">Grams: </p>
+        <p id="grams" class="brojevi"></p>
+    </div>
+
+    <script src="java4.js"></script>
+</body>
+</html>

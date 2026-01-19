@@ -1,5 +1,9 @@
 let duljina = document.getElementById("unos");
-broj = duljina.value.length;
+
 
 let BrojSlova = document.querySelector("p");
-BrojSlova.innerHTML = "Letter Count: " + broj;
+
+duljina.addEventListener("keydown", function (){
+    broj = duljina.value.length;
+    BrojSlova.innerHTML = "Letter Count: " + broj;
+});
