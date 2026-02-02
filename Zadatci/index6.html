@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <style>
+        .myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:22px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+input{
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Currency converter</h1>
+
+    <label for="bitcoin">Bitcoin: </label>
+    <input type="number" id="bitcoin"><br><br>
+    <p id="bit1"></p>
+    <p id="bit2"></p>
+
+    <label for="eterium">Eterium: </label>
+    <input type="number" id="eterium"><br><br>
+    <p id="ete1"></p>
+    <p id="ete2"></p>
+
+    <button type="button" class="myButton">Izračunaj</button>
+
+    <script src="java6.js"></script>
+</body>
+</html>
