@@ -6,8 +6,8 @@ let F = 0;
 let K = 0;
 
 btn.addEventListener("click", function (){
-    F = (Celsius.value * 1.8) + 32;
-    K = Celsius.value + 273.15;
+    F = (parseInt(Celsius.value) * 1.8) + 32;
+    K = parseInt(Celsius.value) + 273.15;
     Fahrenheit.innerHTML = "Fahrenheit: " + F;
     Kelvin.innerHTML = "Kelvin: " + K;
 });
