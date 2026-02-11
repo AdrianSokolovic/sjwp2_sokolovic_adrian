@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valna duljina u Bohrovom modelu</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Valna duljina za vodikov atom u Bohrovom modelu</h1>
-
-    <label for="n">Prvi nivo:</label>
-    <input type="number" id="n" ><br><br>
-
-    <label for="m">Drugi nivo:</label>
-    <input type="number" id="m"><br><br>
-
-    <button type="button">Izračunaj valnu duljinu</button>
-    <p id="result"></p>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h1 class="h4 mb-0">Valna duljina za vodikov atom u Bohrovom modelu</h1>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="n" class="form-label">Prvi nivo (n):</label>
+                                <input type="number" class="form-control" id="n" placeholder="Unesite vrijednost n" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="m" class="form-label">Drugi nivo (m):</label>
+                                <input type="number" class="form-control" id="m" placeholder="Unesite vrijednost m" required>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="button" class="btn btn-success btn-lg">Izračunaj valnu duljinu</button>
+                            </div>
+                        </form>
+                        
+                        <div id="result" class="mt-4 p-3 bg-light rounded text-center" style="min-height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="java.js"></script>
 </body>

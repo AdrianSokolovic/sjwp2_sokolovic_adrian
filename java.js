@@ -12,6 +12,12 @@ let eV = 1.602*Math.pow(10, -19);
 btn.addEventListener("click", function(){
     n = parseInt(inp_n.value);
     m = parseInt(inp_m.value);
+    if (n<1 || m<1 || n<=m) {
+        result.innerHTML = "Unesite ispravne vrijednosti: n > m > 0";
+        return;
+    }
     lambda = (h*c*(m*m)*(n*n))/(13.6*eV*(n*n - m*m));
-    result.innerHTML = "Valna duljina je: " + lambda + " m";
+    let expStr = lambda.toExponential(4);
+    let [mantissa, exponent] = expStr.split('e');
+    result.innerHTML = "Valna duljina je: " + mantissa + " × 10<sup>" + exponent + "</sup> m";
 });
