@@ -5,10 +5,13 @@ let result = document.getElementById("result");
 let n;
 let m;
 let lambda;
+let h = 6.626*Math.pow(10, -34);
+let c = 3*Math.pow(10, 8);
+let eV = 1.602*Math.pow(10, -19);
 
 btn.addEventListener("click", function(){
     n = parseInt(inp_n.value);
     m = parseInt(inp_m.value);
-    lambda = 6.626*Math.pow(10, -34) / (m * 9.10938356 * Math.pow(10, -31) * n);
+    lambda = (h*c*(m*m)*(n*n))/(13.6*eV*(n*n - m*m));
     result.innerHTML = "Valna duljina je: " + lambda + " m";
 });
