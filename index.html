@@ -15,6 +15,48 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Centriranje naziva i isključivanje hover overlaya */
+            .portfolio-item h2,
+            .portfolio-item h3 {
+                text-align: center;
+                margin: .5rem 0 .35rem;
+            }
+            .portfolio-item h2 { color: #0c0707 !important; }
+            .portfolio-item h3 { color: #0c0707 !important; }
+
+            .portfolio-item-caption,
+            .portfolio-item:hover .portfolio-item-caption {
+                background-color: transparent !important;
+                transition: none !important;
+            }
+
+            .portfolio-item-caption-content {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+            }
+
+            /* klikabilna kartica bez zelenih prelaza */
+            .portfolio-item:hover img {
+                filter: none !important;
+                transform: none !important;
+            }
+
+            /* istakni karticu pozadinom i shadow efektom */
+            .portfolio-item {
+                background-color: rgba(255, 255, 255, 0.12);
+                border-radius: 14px;
+                box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+                border: 1px solid rgba(255,255,255,0.2);
+                transition: box-shadow 0.25s ease, transform 0.25s ease;
+            }
+
+            .portfolio-item:hover {
+                box-shadow: 0 14px 26px rgba(0,0,0,0.45);
+                transform: translateY(-3px);
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -66,14 +108,14 @@
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" >
+                        <a class="portfolio-item mx-auto" href="Filmovi_Projekt/Filmovi.html" style="text-decoration: none;">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <h2>Domaća Zadaća 1</h2>
-                            <a href="Filmovi_Projekt/Filmovi.html"><img class="img-fluid" src="dz.png" alt="Projekt1"/></a>
-                            <h3>Filmovi i Serije</h3>
-                        </div>
+                            <h2 style="color: #0c0707;">Domaća Zadaća 1</h2>
+                            <img class="img-fluid" src="dz.png" alt="Projekt1"/>
+                            <h3 style="color: #0c0707;">Filmovi i Serije</h3>
+                        </a>
                     </div>
                     <!-- Portfolio Item 2-->
                     <div class="col-md-6 col-lg-4 mb-5">
