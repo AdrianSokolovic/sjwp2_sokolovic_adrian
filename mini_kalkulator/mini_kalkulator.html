@@ -15,11 +15,13 @@
         <label for="drBr">Drugi broj: </label>
         <input type="number" id="drBr"><br><br>
 
-        <button type="button" id="zbroji" onclick="Plus()">+</button>
-        <button type="button" id="oduzmi" onclick="Minus()">-</button>
-        <button type="button" id="podijeli" onclick="Podijeljeno()">/</button>
-        <button type="button" id="pomnozi" onclick="Puta()">*</button>
-        <button type="reset" id="ac" onclick="Brisanje()">AC</button>   <!-- All Clear -->
+        <div class="button-container">
+            <button type="button" id="zbroji" onclick="Plus()">+</button>
+            <button type="button" id="oduzmi" onclick="Minus()">-</button>
+            <button type="button" id="podijeli" onclick="Podijeljeno()">/</button>
+            <button type="button" id="pomnozi" onclick="Puta()">*</button>
+            <button type="reset" id="ac" onclick="Brisanje()">AC</button>
+        </div>
     </form>
     
     <div id="rez"></div>
